@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('img/R.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    color: #eeb600;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form p {
+    font-size: 13px;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: #bbb;
+}
+
+.input-box textarea {
+    height: 80px;
+    resize: none;
+}
+
+.submit-box input {
+    background-color: #0371a3;
+    color: #fcfcfc;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-box input:hover {
+    background-color: #039be5;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="contact-form">
+      <h2>Quick Contact</h2>
+      <p>Contact us today, and get reply within 24 hours!</p>
+
+      <form action="submit.php" method="POST">
+        <div class="input-box">
+          <input type="text" name="name" required placeholder="Your name" />
+        </div>
+        <div class="input-box">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your Email Address"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="tel"
+            name="phone"
+            required
+            placeholder="Your Phone Number"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="url"
+            name="website"
+            placeholder="Your Web Site starts with http://"
+          />
+        </div>
+        <div class="input-box">
+          <textarea
+            name="message"
+            placeholder="Type your Message Here...."
+            required
+          ></textarea>
+        </div>
+        <div class="submit-box">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
